@@ -1,9 +1,9 @@
-FROM ubuntu:trusty
+FROM ubuntu:xenial
 
 EXPOSE 11300
 
 RUN apt-get update
-RUN apt-get install beanstalkd=1.9-2ubuntu1
+RUN apt-get install -y beanstalkd=1.10-3
 
 VOLUME ["/data"]
 
